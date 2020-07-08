@@ -173,7 +173,7 @@ void BMI055_Accelerometer::RunImpl()
 				}
 
 				// push backup schedule back
-				ScheduleDelayed(_fifo_empty_interval_us * 2);
+				ScheduleDelayed(_fifo_empty_interval_us * 4);
 			}
 
 			// always check current FIFO status/count
